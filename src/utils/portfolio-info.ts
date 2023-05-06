@@ -12,9 +12,9 @@ const cardsData = [
   },
   {
     image: aroundUs,
-    title: "Around US",
+    title: "Around The US",
     description:
-      "Around US gives you the opportunity to share your beautiful photos and rate others photo too",
+      "Around The US gives you the opportunity to share your beautiful photos and rate others photo too",
     link: "https://www.amy-aroundus.com/",
     githubLink: "https://github.com/AmyRayDroui/react-around-api-full",
   },
