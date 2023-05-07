@@ -1,12 +1,4 @@
-import {
-  EmailIcon,
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  PhoneIcon,
-} from "./icons";
-import emailIcon from "../images/icons/email.png";
-import githubIcon from "../images/icons/github-icon.svg";
+import { EmailIcon, GithubIcon, LinkedinIcon, PhoneIcon } from "./icons";
 
 export default function SideLinks({ data }: any) {
   return (

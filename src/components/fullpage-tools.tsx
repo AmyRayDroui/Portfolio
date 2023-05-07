@@ -1,6 +1,6 @@
 "use client";
 import { HomeIcon } from "./icons";
-import { DotIcon } from "./icons/dot";
+import { DotIcon } from "./icons";
 
 export const CustomControls = (props: any) => {
   let currentSlideIndex = props.getCurrentSlideIndex();
