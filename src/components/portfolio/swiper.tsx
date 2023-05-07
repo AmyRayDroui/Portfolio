@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
 import githubIcon from "../../images/icons/github-icon.svg";
-import { cardsData } from "../../utils/portfolio-info";
+import websiteIcon from "../../images/icons/website.png";
+import { cardsData } from "../../utils/data";
 
 // Import Swiper styles
 import "swiper/css";
@@ -39,19 +40,27 @@ function Card({ cardData }: any) {
           className="w-full object-cover object-top h-full"
         />
         <div className="absolute top-0 left-0 h-full w-full bg-shadow opacity-0 duration-300 hover:opacity-100">
-          <div className="py-24 px-16 flex flex-col h-full justify-end gap-y-2 w-4/6">
+          <p className="absolute top-2 left-4 text-lg font-thin">
+            Click to open
+          </p>
+          <div className="py-24 px-16 flex flex-col h-full justify-end gap-y-2 w-4/6 opacity-100">
             <h3 className="text-6xl font-bold pb-4">{cardData.title}</h3>
             <p className="text-2xl font-medium">{cardData.description}</p>
-            <div className="flex gap-x-4 items-center">
+            <p className="text-md font-medium">{cardData.skills}</p>
+            <div className="flex gap-x-3 items-center">
               <a href={cardData.githubLink} target="_blank">
+                <img className="h-7" src={githubIcon} alt="Github's logo"></img>
+              </a>
+              <a
+                href={cardData.link}
+                target="_blank"
+                className="text-lg self-end"
+              >
                 <img
-                  className="footer__media-icon"
-                  src={githubIcon}
+                  className="h-[26.5px]"
+                  src={websiteIcon}
                   alt="Github's logo"
                 ></img>
-              </a>
-              <a href={cardData.link} target="_blank" className="text-lg">
-                Website
               </a>
             </div>
           </div>

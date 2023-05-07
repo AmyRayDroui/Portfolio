@@ -1,15 +1,23 @@
 import { useEffect, useState } from "react";
 import { FullPage, Slide } from "react-full-page";
+import AboutMe from "../about-me/about-me";
 import Banner from "../banner/banner";
 import Experience from "../experience/experience";
 import { CustomControls } from "../fullpage-tools";
 import Portfolio from "../portfolio/portfolio";
+import SideLinks from "../side-links";
 
 const lgScreen: number = 1024;
 const lgScreenHeight: number = 920;
 const firstRoute: number = 3;
 
-const sectionArray = ["banner", "portfolio", "experience", "education"];
+const sectionArray = [
+  "banner",
+  "about-me",
+  "portfolio",
+  "experience",
+  "education",
+];
 
 export default function Home({}: any) {
   const [screenSize, getDimension] = useState({
@@ -89,14 +97,14 @@ export default function Home({}: any) {
           <Slide className="bg-[url('/src/images/bg/galaxy_banner.jpg')] bg-cover bg-bottom text-light ">
             <Banner />
           </Slide>
-          <Slide className="bg-bgDark">
+          <Slide className="bg-gradient-to-b	from-bgDark to-purple">
+            <AboutMe />
+          </Slide>
+          <Slide className="bg-gradient-to-t	from-bgDark to-purple">
             <Portfolio />
           </Slide>
           <Slide className="bg-gradient-to-b	from-bgDark to-purple">
             <Experience />
-          </Slide>
-          <Slide className="bg-purple">
-            <div></div>
           </Slide>
         </FullPage>
       </div>
@@ -112,6 +120,7 @@ export default function Home({}: any) {
 
         <div></div>
       </div>
+      <SideLinks />
       <style>
         {`
           html {

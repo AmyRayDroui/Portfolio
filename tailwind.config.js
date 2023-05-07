@@ -6,7 +6,7 @@ module.exports = {
       main: "#FEE5CA",
       primary: "#F9A28F",
       purple: "#51244B",
-      shadow: "RGBA(40, 40, 40, 0.75)",
+      shadow: "RGBA(40, 40, 40, 0.8)",
       dark: "#282828",
       bgDark: "#08040C",
       gray: "#838289",
