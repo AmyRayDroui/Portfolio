@@ -76,7 +76,7 @@ export default function Home({}: any) {
   };
   return (
     <>
-      <div className="hidden lg:grid">
+      <div className="hidden lg:grid !short:hidden">
         <FullPage
           controls={
             screenSize.dynamicWidth >= lgScreen &&
@@ -108,17 +108,19 @@ export default function Home({}: any) {
           </Slide>
         </FullPage>
       </div>
-      <div className="h-full lg:hidden">
-        <div>
+      <div className="h-full w-screen lg:hidden">
+        <div className="bg-bgDark bg-cover bg-bottom text-light w-full">
           <Banner />
         </div>
-        <div>
+        <div className="bg-gradient-to-b	from-bgDark to-purple">
+          <AboutMe />
+        </div>
+        <div className="bg-gradient-to-t	from-bgDark to-purple">
           <Portfolio />
         </div>
-
-        <div></div>
-
-        <div></div>
+        <div className="bg-gradient-to-b	from-bgDark to-purple">
+          <Experience />
+        </div>
       </div>
       <SideLinks />
       <style>

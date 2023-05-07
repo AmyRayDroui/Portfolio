@@ -70,6 +70,7 @@ module.exports = {
       screens: {
         short: { raw: "(max-height: 920px)" },
         mdHeight: { raw: "(max-height: 1200px)" },
+        lg: "1024px",
         xl: "1350px",
       },
     },

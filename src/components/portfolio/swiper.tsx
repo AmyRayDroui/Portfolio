@@ -39,14 +39,18 @@ function Card({ cardData }: any) {
           src={cardData.image}
           className="w-full object-cover object-top h-full"
         />
-        <div className="absolute top-0 left-0 h-full w-full bg-shadow opacity-0 duration-300 hover:opacity-100">
-          <p className="absolute top-2 left-4 text-lg font-thin">
+        <div className="absolute top-0 left-0 h-full w-full bg-shadow lg:opacity-0 duration-300 hover:opacity-100">
+          <p className="absolute top-2 left-4 text-lg font-thin hidden md:block">
             Click to open
           </p>
-          <div className="py-24 px-16 flex flex-col h-full justify-end gap-y-2 w-4/6 opacity-100">
-            <h3 className="text-6xl font-bold pb-4">{cardData.title}</h3>
-            <p className="text-2xl font-medium">{cardData.description}</p>
-            <p className="text-md font-medium">{cardData.skills}</p>
+          <div className="py-8 px-4 lg:py-24 lg:px-16 flex flex-col h-full justify-end gap-y-2 md:w-4/6 opacity-100">
+            <h3 className="text-2xl md:text-4xl lg:text-6xl font-bold pb-4">
+              {cardData.title}
+            </h3>
+            <p className="text-lg lg:text-2xl font-medium">
+              {cardData.description}
+            </p>
+            <p className="text-xs lg:text-md font-medium">{cardData.skills}</p>
             <div className="flex gap-x-3 items-center">
               <a href={cardData.githubLink} target="_blank">
                 <img className="h-7" src={githubIcon} alt="Github's logo"></img>

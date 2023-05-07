@@ -4,16 +4,16 @@ import profilePic from "../../images/Amy.png";
 export default function AboutMe({}: any) {
   return (
     <>
-      <WrapperLarge className="grid-cols-auto-1fr gap-x-8 h-full text-left text-light pb-16 max-h-screen">
+      <WrapperLarge className="grid-rev-rows-1fr-auto lg:grid-cols-auto-1fr gap-x-8 h-full text-left text-light pb-16 max-h-screen">
         <img
           src={profilePic}
-          className="rounded-full object-contain self-center max-h-[350px] min-h-[200px] min-w-[200px]"
+          className="rounded-full object-contain self-center max-h-[50vw] lg:max-h-[350px] lg:min-h-[200px] lg:min-w-[200px]"
         />
-        <div className="grid grid-flow-rows gap-y-8 h-full">
-          <h2 className="text-primary font-bold text-6xl self-end mb-7">
+        <div className="grid grid-flow-rows lg:gap-y-8 h-full">
+          <h2 className="text-primary font-bold text-2xl md:text-4xl lg:text-6xl self-end mb-7">
             About Me
           </h2>
-          <div className="text-2xl h-min flex flex-col">
+          <div className="text-lg lg:text-2xl h-min flex flex-col">
             <p>Hi, I'm a 21 years old web developer from Haifa, Israel.</p>
             <p>
               I have 1 year experience working in this field as a fullstack
@@ -33,7 +33,7 @@ export default function AboutMe({}: any) {
               type="application/pdf"
               rel="alternate"
               media="print"
-              className="mt-6 text-xl w-max"
+              className="mt-6 text-md lg:text-xl w-max"
             >
               ➞ link to CV
             </a>
