@@ -59,7 +59,7 @@ export function JobTooltip({ id, data }: any) {
     <AppTooltip
       id={id}
       place={data.place && data.place}
-      classNameTooltip="z-20 max-w-[400px] !opacity-100 !drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] !rounded-lg"
+      classNameTooltip="z-20 max-w-[400px] !opacity-0 lg:!opacity-100 !drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] !rounded-lg"
     >
       <>
         <div className="text-sm relative flex flex-col gap-y-2">
