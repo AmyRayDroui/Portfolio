@@ -2,7 +2,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import * as React from "react";
 import { PlacesType, Tooltip } from "react-tooltip";
 
-interface OneAITooltipProps {
+interface TooltipProps {
   id?: string;
   children: React.ReactElement;
   place?: PlacesType;
@@ -15,7 +15,7 @@ export default function AppTooltip({
   place = "bottom",
   classNameTooltip,
   ...props
-}: OneAITooltipProps) {
+}: TooltipProps) {
   return (
     <Tooltip id={id} place={place} className={classNameTooltip}>
       {children}

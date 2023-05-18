@@ -9,8 +9,9 @@ import { cardsData } from "../../utils/data";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { cardData } from "../../lib/interfaces";
 
-export default function PortfolioSwiper({}: any) {
+export default function PortfolioSwiper() {
   return (
     <Swiper
       pagination={true}
@@ -27,7 +28,7 @@ export default function PortfolioSwiper({}: any) {
   );
 }
 
-function Card({ cardData }: any) {
+function Card({ cardData }: { cardData: cardData }) {
   return (
     <>
       <a

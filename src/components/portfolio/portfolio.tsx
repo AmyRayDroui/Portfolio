@@ -1,7 +1,7 @@
 import { WrapperLarge } from "../wrappers";
 import PortfolioSwiper from "./swiper";
 
-export default function Portfolio({}: any) {
+export default function Portfolio() {
   return (
     <>
       <WrapperLarge className="grid-rows-1fr-auto gap-y-8 text-left text-light pb-16 max-h-screen">

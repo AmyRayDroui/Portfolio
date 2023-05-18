@@ -10,7 +10,7 @@ import SideLinks from "../side-links";
 const lgScreen: number = 1024;
 const lgScreenHeight: number = 920;
 
-export default function Home({}: any) {
+export default function Home() {
   const [screenSize, getDimension] = useState({
     dynamicWidth: typeof window !== "undefined" ? window.innerWidth : lgScreen,
     dynamicHeight:

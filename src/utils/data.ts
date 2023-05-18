@@ -1,7 +1,8 @@
 import newsExplorer from "../images/projects/news-explorer-longer.png";
 import aroundUs from "../images/projects/around-us-longer.png";
+import { cardData, JobData } from "../lib/interfaces";
 
-const cardsData = [
+const cardsData: cardData[] = [
   {
     image: newsExplorer,
     title: "News Explorer",
@@ -24,7 +25,7 @@ const cardsData = [
   },
 ];
 
-const experienceData = [
+const experienceData: JobData[] = [
   {
     name: "One Zero",
     position: "Fullstack web developer",

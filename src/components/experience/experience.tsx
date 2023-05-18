@@ -2,8 +2,9 @@ import { WrapperLarge } from "../wrappers";
 import spaceship from "../../images/bg/experience_3.png";
 import AppTooltip from "../app-tooltip";
 import { experienceData } from "../../utils/data";
+import { JobData } from "../../lib/interfaces";
 
-export default function Experience({}: any) {
+export default function Experience() {
   return (
     <>
       <WrapperLarge className="h-full grid-flow-row items-center content-start gap-y-6 text-left text-light relative">
@@ -15,7 +16,7 @@ export default function Experience({}: any) {
           className="absolute -bottom-2 left-0 h-full w-full object-fill hidden lg:block short:hidden"
         />
         <div className="lg:absolute top-[120px] -left-[40px] h-full w-5/6">
-          {experienceData.map((data) => (
+          {experienceData.map((data: JobData) => (
             <Job data={data} />
           ))}
         </div>
@@ -24,7 +25,7 @@ export default function Experience({}: any) {
   );
 }
 
-function Job({ data }: any) {
+function Job({ data }: { data: JobData }) {
   return (
     <>
       <div
@@ -49,16 +50,16 @@ function Job({ data }: any) {
           </p>
         </div>
       </div>
-      <JobTooltip id={data.dataTooltipId} data={data} />
+      <JobTooltip data={data} />
     </>
   );
 }
 
-export function JobTooltip({ id, data }: any) {
+export function JobTooltip({ data }: { data: JobData }) {
   return (
     <AppTooltip
-      id={id}
-      place={data.place && data.place}
+      id={data.dataTooltipId}
+      place={data.place}
       classNameTooltip="z-20 max-w-[400px] !opacity-0 lg:!opacity-100 !drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] !rounded-lg"
     >
       <>

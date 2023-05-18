@@ -1,7 +1,7 @@
 import { WrapperLarge } from "../wrappers";
 import profilePic from "../../images/Amy.png";
 
-export default function AboutMe({}: any) {
+export default function AboutMe() {
   return (
     <>
       <WrapperLarge className="grid-rev-rows-1fr-auto lg:grid-cols-auto-1fr gap-x-8 h-full text-left text-light pb-16 max-h-screen">

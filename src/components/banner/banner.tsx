@@ -1,6 +1,6 @@
 import { WrapperLarge } from "../wrappers";
 
-export default function Banner({}: any) {
+export default function Banner() {
   return (
     <>
       <div className="before:w-full h-min lg:before:h-full before:opacity-50 before:bg-[#0e0613] before:absolute before:top-0 before:left-0 after:-z-1">
