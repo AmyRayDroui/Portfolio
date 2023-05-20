@@ -1,5 +1,6 @@
 import newsExplorer from "../images/projects/news-explorer-longer.png";
 import aroundUs from "../images/projects/around-us-longer.png";
+import familyProtection from "../images/projects/family-protection-longer.png";
 import { cardData, JobData } from "../lib/interfaces";
 
 const cardsData: cardData[] = [
@@ -22,6 +23,15 @@ const cardsData: cardData[] = [
       "The Frontend uses React and the API is managed by Express with MongoDB",
     link: "https://www.amy-aroundus.com/",
     githubLink: "https://github.com/AmyRayDroui/react-around-api-full",
+  },
+  {
+    image: familyProtection,
+    title: "Family Protection",
+    description:
+      "Family Protection is an example for a small business website with contact us form and about us sections utilizes different locals.",
+    skills: "The Frontend uses Next.js connected to DatoCMS via Graphql",
+    link: "https://family-protection.herokuapp.com/",
+    githubLink: "https://github.com/AmyRayDroui/family-protection",
   },
 ];
 
