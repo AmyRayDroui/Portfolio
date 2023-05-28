@@ -14,6 +14,7 @@ export interface JobData {
   id: string;
   dataTooltipId: string;
   place?: PlacesType;
+  link?: string;
 }
 
 export interface cardData {

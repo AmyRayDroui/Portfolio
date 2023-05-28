@@ -11,9 +11,18 @@ export default function Experience() {
         <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold w-max text-primary">
           Experience
         </h2>
+        <ul className="list-disc text-sm lg:text-lg ml-10">
+          <li className="hidden lg:list-item">
+            <p>Hover the logos for more detail</p>
+          </li>
+          <li>
+            <p>Click the logos to company website</p>
+          </li>
+        </ul>
         <img
           src={spaceship}
           className="absolute -bottom-2 left-0 h-full w-full object-fill hidden lg:block short:hidden"
+          alt="spaceship"
         />
         <div className="lg:absolute top-[120px] -left-[40px] h-full w-5/6">
           {experienceData.map((data: JobData) => (
@@ -32,7 +41,9 @@ function Job({ data }: { data: JobData }) {
         className={`lg:absolute ${data.className}`}
         data-tooltip-id={data.dataTooltipId}
       >
-        <img src={data.img.src} alt={data.img.alt} className="h-16"></img>
+        <a href={data.link} target="_blank" rel="noreferrer">
+          <img src={data.img.src} alt={data.img.alt} className="h-16"></img>
+        </a>
         <h4 className="text-2xl font-bold">{data.name}</h4>
         <p>{data.years}</p>
       </div>

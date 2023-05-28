@@ -57,6 +57,7 @@ const experienceData: JobData[] = [
     className: "top-[50px] right-[90px] xl:right-[140px]",
     id: "onezero",
     dataTooltipId: "onezero-tooltip",
+    link: "https://onezero.co.il/",
   },
   {
     name: "Vayyar",
@@ -72,6 +73,7 @@ const experienceData: JobData[] = [
     className: "top-[225px] right-[280px] xl:right-[350px]",
     id: "vayyar",
     dataTooltipId: "vayyar-tooltip",
+    link: "https://vayyar.com/",
   },
   {
     name: "Magshimim",
@@ -88,6 +90,7 @@ const experienceData: JobData[] = [
     id: "magshimim",
     dataTooltipId: "magshimim-tooltip",
     place: "top",
+    link: "https://www.magshimim.cyber.org.il/",
   },
 ];
 
