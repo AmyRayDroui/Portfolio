@@ -1,6 +1,7 @@
+import { ReactNode } from "react";
 import { EmailIcon, GithubIcon, LinkedinIcon, PhoneIcon } from "./icons";
 
-export default function SideLinks({ data }: any) {
+export default function SideLinks() {
   return (
     <>
       <div className="fixed top-20 right-0 z-[300] text-primary flex flex-col items-end gap-y-1 w-[70px]">
@@ -25,12 +26,25 @@ export default function SideLinks({ data }: any) {
   );
 }
 
-function Link({ href, type, target = "_self", className = "", children }: any) {
+function Link({
+  href,
+  target = "_self",
+  className = "",
+  children,
+  rel = "noreferrer",
+}: {
+  href: string;
+  target?: string;
+  className?: string;
+  children: ReactNode;
+  rel?: string;
+}) {
   return (
     <a
       href={href}
       target={target}
       className={`border-4 rounded-l-xl p-2 pr-8 -mr-5 hover:-mr-1 h-12 w-16 bg-purple lg:bg-[rgba(0,0,0,0)] ${className}`}
+      rel={rel}
     >
       {children}
     </a>
