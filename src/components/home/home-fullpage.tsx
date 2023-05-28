@@ -1,11 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Banner from "../banner/banner";
 import AboutMe from "../about-me/about-me";
 import Portfolio from "../portfolio/portfolio";
 import Experience from "../experience/experience";
-import SideLinks from "../side-links";
 
 const HomeFullpage = () => (
   <>

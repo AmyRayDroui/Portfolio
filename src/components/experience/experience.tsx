@@ -44,7 +44,7 @@ function Job({ data }: { data: JobData }) {
           <p className="flex flex-wrap">
             {data.skills.map((skill: string, index: number) => (
               <span>{`${skill} ${
-                index != data.skills.length - 1 ? "," : ""
+                index !== data.skills.length - 1 ? "," : ""
               }`}</span>
             ))}
           </p>
@@ -71,7 +71,7 @@ export function JobTooltip({ data }: { data: JobData }) {
             <p className="flex flex-wrap">
               {data.skills.map((skill: string, index: number) => (
                 <span>{`${skill} ${
-                  index != data.skills.length - 1 ? "," : ""
+                  index !== data.skills.length - 1 ? "," : ""
                 }`}</span>
               ))}
             </p>

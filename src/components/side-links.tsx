@@ -10,6 +10,7 @@ export default function SideLinks({ data }: any) {
         <Link
           href="https://www.linkedin.com/in/amy-ray-droui-webdeveloper/"
           target="_blank"
+          rel="noreferrer"
         >
           <LinkedinIcon className="h-5 w-5 ml-px mt-px" />
         </Link>

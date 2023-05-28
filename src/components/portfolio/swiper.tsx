@@ -35,10 +35,12 @@ function Card({ cardData }: { cardData: cardData }) {
         className="relative flex justify-center items-center h-full"
         href={cardData.link}
         target="_blank"
+        rel="noreferrer"
       >
         <img
           src={cardData.image}
           className="w-full object-cover object-top h-full"
+          alt={cardData.title}
         />
         <div className="absolute top-0 left-0 h-full w-full bg-shadow lg:opacity-0 duration-300 hover:opacity-100">
           <p className="absolute top-2 left-4 text-lg font-thin hidden md:block">
@@ -53,13 +55,14 @@ function Card({ cardData }: { cardData: cardData }) {
             </p>
             <p className="text-xs lg:text-md font-medium">{cardData.skills}</p>
             <div className="flex gap-x-3 items-center">
-              <a href={cardData.githubLink} target="_blank">
+              <a href={cardData.githubLink} target="_blank" rel="noreferrer">
                 <img className="h-7" src={githubIcon} alt="Github's logo"></img>
               </a>
               <a
                 href={cardData.link}
                 target="_blank"
                 className="text-lg self-end"
+                rel="noreferrer"
               >
                 <img
                   className="h-[26.5px]"
