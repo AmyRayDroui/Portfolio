@@ -7,7 +7,7 @@ import { JobData } from "../../lib/interfaces";
 export default function Experience() {
   return (
     <>
-      <WrapperLarge className="h-full grid-flow-row items-center content-start gap-y-6 text-left text-light relative">
+      <WrapperLarge className="h-screen grid-flow-row items-center content-start gap-y-6 text-left text-light relative lg:overflow-hidden">
         <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold w-max text-primary">
           Experience
         </h2>

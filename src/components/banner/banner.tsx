@@ -3,8 +3,8 @@ import { WrapperLarge } from "../wrappers";
 export default function Banner() {
   return (
     <>
-      <div className="before:w-full h-min lg:before:h-full before:opacity-50 before:bg-[#0e0613] before:absolute before:top-0 before:left-0 after:-z-1">
-        <WrapperLarge className="h-full grid-flow-row items-center content-center gap-y-6 text-left lg:absolute top-0 z-1">
+      <div className="before:w-full h-min short:before:!h-min lg:before:h-full before:opacity-50 before:bg-[#0e0613] before:absolute before:top-0 before:left-0 after:-z-1">
+        <WrapperLarge className="h-full grid-flow-row items-center content-center gap-y-6 text-left lg:absolute short:!static top-0 z-1">
           <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold w-max ">
             Hello,
             <br />
@@ -15,7 +15,7 @@ export default function Banner() {
           {/*<div className="dot absolute top-52 left-96 h-1 w-1 bg-gray rounded-full"></div>*/}
         </WrapperLarge>
       </div>
-      <section>
+      <section className="hidden lg:block !short:hidden">
         <span className="star"></span>
         <span className="star"></span>
         <span className="star"></span>
@@ -52,18 +52,16 @@ export default function Banner() {
         70%
         {
             opacity: 1;
-    
         }
         100%
         {
             transform: rotate(315deg) translateX(-1000px);
             opacity: 0;
-    
         }
         
     }
     .star:nth-child(1){
-        top: 0;
+        top: -4px;
         right: 0;
         left:initial;
         animation-delay:1 ;
@@ -71,7 +69,7 @@ export default function Banner() {
     }
     
     .star:nth-child(2){
-        top: 0;
+        top: -4px;
         right: 80px;
         left:initial;
         animation-delay:1.5s;
@@ -87,7 +85,7 @@ export default function Banner() {
     }
     
     .star:nth-child(4){
-        top: 0;
+        top: -4px;
         right: 180px;
         left:initial;
         animation-delay:0.6s;
@@ -95,7 +93,7 @@ export default function Banner() {
     }
     
     .star:nth-child(5){
-        top: 0;
+        top: -4px;
         right: 300px;
         left:initial;
         animation-delay:2.5s;

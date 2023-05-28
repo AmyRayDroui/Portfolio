@@ -28,7 +28,7 @@ const cardsData: cardData[] = [
     image: familyProtection,
     title: "Family Protection",
     description:
-      "Family Protection is an example for a small business website with contact us form and about us sections utilizes different locals.",
+      "Family Protection is an example of a small business website with contact us form and about us sections. It utilizes different locals.",
     skills: "The Frontend uses Next.js connected to DatoCMS via Graphql",
     link: "https://family-protection.herokuapp.com/",
     githubLink: "https://github.com/AmyRayDroui/family-protection",

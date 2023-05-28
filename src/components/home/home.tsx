@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
-import { FullPage, Slide } from "react-full-page";
 import AboutMe from "../about-me/about-me";
 import Banner from "../banner/banner";
 import Experience from "../experience/experience";
-import { CustomControls } from "../fullpage-tools";
 import Portfolio from "../portfolio/portfolio";
 import SideLinks from "../side-links";
+import useWindowSize from "../../utils/hooks";
+import HomeFullpage from "./home-fullpage";
 
 const lgScreen: number = 1024;
 const lgScreenHeight: number = 920;
 
 export default function Home() {
+  const size = useWindowSize();
   const [screenSize, getDimension] = useState({
     dynamicWidth: typeof window !== "undefined" ? window.innerWidth : lgScreen,
     dynamicHeight:
@@ -38,37 +39,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="hidden lg:grid !short:hidden">
-        <FullPage
-          controls={
-            screenSize.dynamicWidth >= lgScreen &&
-            screenSize.dynamicHeight >= lgScreenHeight
-              ? CustomControls
-              : ""
-          }
-          scrollMode={
-            screenSize.dynamicWidth >= lgScreen &&
-            screenSize.dynamicHeight >= lgScreenHeight
-              ? "full-page"
-              : "normal"
-          }
-          duration={100}
-        >
-          <Slide className="bg-[url('/src/images/bg/galaxy_banner.jpg')] bg-cover bg-bottom text-light ">
-            <Banner />
-          </Slide>
-          <Slide className="bg-gradient-to-b	from-bgDark to-purple">
-            <AboutMe />
-          </Slide>
-          <Slide className="bg-gradient-to-t	from-bgDark to-purple">
-            <Portfolio />
-          </Slide>
-          <Slide className="bg-gradient-to-b	from-bgDark to-purple">
-            <Experience />
-          </Slide>
-        </FullPage>
-      </div>
-      <div className="h-full w-screen lg:hidden">
+      {size.width > 1024 && size.height > 920 && <HomeFullpage />}
+
+      <div className="h-full w-screen lg:hidden short:!block">
         <div className="bg-bgDark bg-cover bg-bottom text-light w-full">
           <Banner />
         </div>
