@@ -14,7 +14,7 @@ export default function AboutMe() {
             About Me
           </h2>
           <div className="text-lg lg:text-2xl h-min flex flex-col">
-            <p>Hi, I'm a 21 years old web developer from Haifa, Israel.</p>
+            <p>Hi, I'm a web developer from Haifa, Israel.</p>
             <p>
               I have 1 year experience working in this field as a fullstack
               developer.
@@ -28,7 +28,7 @@ export default function AboutMe() {
               things.
             </p>
             <a
-              href="https://drive.google.com/file/d/1dGct1yPHmJKps3PI7esKAFCpLxX7YBIj/view?usp=sharing"
+              href="https://drive.google.com/file/d/18xGuJqfewF4Os-XSGooMMIjZRvFMa0ya/view?usp=sharing"
               target="_blank"
               type="application/pdf"
               rel="alternate"
