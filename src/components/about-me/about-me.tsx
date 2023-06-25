@@ -16,7 +16,7 @@ export default function AboutMe() {
           <div className="text-lg lg:text-2xl h-min flex flex-col">
             <p>Hi, I'm a web developer from Haifa, Israel.</p>
             <p>
-              I have 1 year experience working in this field as a fullstack
+              I have 2 years experience working in this field as a fullstack
               developer.
             </p>
             <p>
